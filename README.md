@@ -1,7 +1,158 @@
-# Blog Pessoal (ONG Generation Brasil)
- 
-**Primeiros contato com códigos.**
-- Aplicação Blog pessoal backend, desenvolvida durante o programa Developer Jr.Java React Full Stack, da ONG Generation Brasil.
-- Modelo de dados, repositórios (conexão com banco de dados), camada Rest Controller (Request/Response), Secutiry, testes unitários com JUnit 5 + Springboot e Dockerfile.
+# blog-pessoal - Plataforma de Blog Pessoal
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+blog-pessoal é uma aplicação backend monolítica desenvolvida para gerenciar um blog pessoal, oferecendo funcionalidades robustas para a administração de usuários, temas e postagens, com segurança reforçada através de tokens JWT.
+
+# Funcionalidades Principais
+
+A aplicação utiliza quatro APIs REST para comunicação dos serviços:
+
+User: Gerencia os usuários da plataforma, permitindo operações de criação, leitura, atualização e exclusão (CRUD) de perfis de usuário.
+
+Tema: Gerencia os temas das postagens, oferecendo a capacidade de criar, visualizar, atualizar e excluir temas que categorizam os conteúdos do blog.
+
+Postagem: Focada no gerenciamento das postagens do blog, permitindo criar, ler, atualizar e excluir conteúdos publicados pelos usuários.
+
+# Segurança
+
+A aplicação implementa segurança utilizando tokens JWT (JSON Web Tokens) para autenticação e autorização, garantindo que apenas usuários autenticados possam acessar e manipular os dados sensíveis da plataforma.
+
+# O que a aplicação proporciona?
+
+blog-pessoal foi projetada para oferecer uma solução completa e segura para a gestão de blogs pessoais. A arquitetura monolítica assegura a integração coesa das funcionalidades de usuário, tema e postagem, enquanto o uso de JWT para segurança proporciona uma camada adicional de proteção aos dados e operações realizadas na plataforma.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Database](#database)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [Observation](#observation)
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/IgorTecnologia/blog-pessoal.git
+```
+
+2. Install dependencies with Maven
+
+## Usage
+
+1. Start the application with Maven
+2. The API will be accessible at http://localhost:8080
+
+## Collection Postman
+
+Download these files and import them into your Postman to use the ready-made HTTP methods along with the already configured environment variables, to perform the requests/responses
+
+[Download Collections](https://github.com/IgorTecnologia/api-movie/blob/docs-postman/api-movie-collection.json)
+
+[Download Environment variables](https://github.com/IgorTecnologia/api-movie/blob/docs-postman/Local-host-environment.json)
+
+## API Endpoints
+The API provides the following endpoints:
+
+**POST USUARIOS**
+```markdown
+GET /usuarios/cadastrar - Register a new user into the App.
+```
+```json
+{
+    "nome" : "igor",
+    "usuario" : "igor@gmail.com.br",
+    "senha" : "12345678",
+    "foto" : "www.img.com"
+}
+```
+**POST LOGIN USUARIOS**
+```markdown
+GET /usuarios/logar - Performs authentication and authorization in the application.
+```
+```json
+{
+    "nome" : "igor",
+    "usuario" : "igor@gmail.com.br"
+}
+```
+**PUT USUARIOS**
+```markdown
+PUT /usuarios/atualizar - Update a user in the application by id.
+```
+```json
+{
+    "id" : 1,
+    "nome": "Wilson",
+    "usuario": "wilson@gmail.com.br",
+    "senha": "12345678",
+    "foto": "www.img.com.br"
+}
+```
+**GET USUARIOS**
+```markdown
+GET /usuarios/all - Retrieve all users.
+```
+```json
+{
+        "id": 1,
+        "nome": "igor",
+        "usuario": "igor@gmail.com.br",
+        "senha": "$2a$10$yL8xjW0oaRgLgIafGe9Q.OznZoWE1D7L7ClTN4C9waUi6jAPiyk02",
+        "foto": "www.img.com",
+        "postagem": []
+    }
+```
+**GET USUARIOS/ID**
+```markdown
+GET /usuarios/id - Retrieve a single user by id.
+```
+
+```json
+{
+    "id": 1,
+    "nome": "igor",
+    "usuario": "igor@gmail.com.br",
+    "senha": "$2a$10$yL8xjW0oaRgLgIafGe9Q.OznZoWE1D7L7ClTN4C9waUi6jAPiyk02",
+    "foto": "www.img.com",
+    "postagem": []
+}
+```
+## Database
+The project utilizes [MySql](https://dev.mysql.com/doc/) as the database.
+
+## Technologies Used
+
+- Java version 17
+- Spring Boot
+- Maven
+- MySql database
+- Spring Tool Suite 4
+- Postman
+
+## Observation
+This APIRest provides other endpoints besides movies, such as:
+
+/temas
+
+/postagens
+
+
+Located in the Application resources layer.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
+
+When contributing to this project, please follow the existing code style, [commit conventions](https://www.conventionalcommits.org/en/v1.0.0/), and submit your changes in a separate branch.
+
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, abra um problema ou envie uma solicitação pull ao repositório.
+
+Ao contribuir para este projeto, siga o estilo de código existente, [convenções de commit](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657), e envie suas alterações em uma branch separado.
 
 ![imagem1](https://i.imgur.com/IcLtFqS.png)
