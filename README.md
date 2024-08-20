@@ -25,15 +25,15 @@ blog-pessoal foi projetada para oferecer uma solução completa e segura para a 
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
+- [Instalação](#instalação)
+- [Uso](#uso)
 - [API Endpoints](#api-endpoints)
-- [Database](#database)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [Observation](#observation)
+- [Banco de dados](#banco-de-dados)
+- [Tecnologias usadas](#tecnologias-usadas)
+- [Contribuição](#contribuição)
+- [Observação](#observação)
 
-## Installation
+## Instalação
 
 1. Clone the repository:
 
@@ -41,23 +41,23 @@ blog-pessoal foi projetada para oferecer uma solução completa e segura para a 
 git clone https://github.com/IgorTecnologia/blog-pessoal.git
 ```
 
-2. Install dependencies with Maven
+2. Instale as dependências com o Maven.
 
-## Usage
+## Uso
 
-1. Start the application with Maven
-2. The API will be accessible at http://localhost:8080
+1. Inicie a aplicação com o Maven.
+2. A API estará acessível em http://localhost:8080
 
-## Collection Postman
+## Coleção Postman
 
-Download these files and import them into your Postman to use the ready-made HTTP methods along with the already configured environment variables, to perform the requests/responses
+Baixe esses arquivos e importe-os para o seu Postman para utilizar os métodos HTTP prontos junto com as variáveis ​​de ambiente já configuradas, para realizar as solicitações/respostas
 
-[Download Collections](https://github.com/IgorTecnologia/api-movie/blob/docs-postman/api-movie-collection.json)
+[Baixar Coleções](https://github.com/IgorTecnologia/api-movie/blob/docs-postman/api-movie-collection.json)
 
-[Download Environment variables](https://github.com/IgorTecnologia/api-movie/blob/docs-postman/Local-host-environment.json)
+[Baixar variáveis de ambiente](https://github.com/IgorTecnologia/api-movie/blob/docs-postman/Local-host-environment.json)
 
 ## API Endpoints
-The API provides the following endpoints:
+A API fornece os seguintes endpoints:
 
 **POST USUARIOS**
 ```markdown
@@ -123,10 +123,10 @@ GET /usuarios/id - Retrieve a single user by id.
     "postagem": []
 }
 ```
-## Database
+## Banco de dados
 The project utilizes [MySql](https://dev.mysql.com/doc/) as the database.
 
-## Technologies Used
+## Tecnologias Usadas
 
 - Java version 17
 - Spring Boot
@@ -135,7 +135,7 @@ The project utilizes [MySql](https://dev.mysql.com/doc/) as the database.
 - Spring Tool Suite 4
 - Postman
 
-## Observation
+## Observação
 This APIRest provides other endpoints besides movies, such as:
 
 /temas
@@ -145,11 +145,7 @@ This APIRest provides other endpoints besides movies, such as:
 
 Located in the Application resources layer.
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
-
-When contributing to this project, please follow the existing code style, [commit conventions](https://www.conventionalcommits.org/en/v1.0.0/), and submit your changes in a separate branch.
+## Contribuição
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, abra um problema ou envie uma solicitação pull ao repositório.
 
