@@ -23,7 +23,7 @@ A aplicação implementa segurança utilizando tokens JWT (JSON Web Tokens) para
 
 blog-pessoal foi projetada para oferecer uma solução completa e segura para a gestão de blogs pessoais. A arquitetura monolítica assegura a integração coesa das funcionalidades de usuário, tema e postagem, enquanto o uso de JWT para segurança proporciona uma camada adicional de proteção aos dados e operações realizadas na plataforma.
 
-## Table of Contents
+## Tabela de conteúdos
 
 - [Instalação](#instalação)
 - [Uso](#uso)
